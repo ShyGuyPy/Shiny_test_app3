@@ -3,6 +3,31 @@ shinyServer(function(input, output, session){
     paste("Today's date is", as.character(test_date$test_date_value))
   })
   
+  output$ibox <- renderUI({
+    div(class="d1",
+    p(class="p1", style= "", "center me")
+    )
+  })
+  
+  output$ibox2 <- renderUI({
+    p("i2")
+  })
+  
+  output$ibox3 <- renderUI({
+    p("i3")
+  })
+  
+  output$boxes  <- renderUI({ 
+    p("test")
+  })
+  
+  output$boxes2  <- renderUI({
+    p("test2")
+  })
+  
+  
+  #non-output code below
+  
   observeEvent(input$date, {
     test_date$test_date_value <- input$date
   })
