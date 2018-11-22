@@ -21,7 +21,7 @@ dashboardPage(
       box(
         title=NULL,
         width=NULL,
-        height=50,
+        height=150,
         htmlOutput(outputId = "ibox2")
       ),
       box(

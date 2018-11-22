@@ -10,7 +10,32 @@ shinyServer(function(input, output, session){
   })
   
   output$ibox2 <- renderUI({
-    p("i2")
+    div(class="topbox1", 
+        div(class="square", style=orange,#"background-color:yellow"
+            div(class="my_content",
+                div(class="table",
+                    div(class="table-cell",
+                        p(class="p4","P")
+                    )))), 
+        div(class="square", style=red,#"background-color:red",
+            div(class="my_content",
+                div(class="table",
+                    div(class="table-cell",
+                        p(class="p4","GW")
+                    )))),
+        div(class="square", style=green,#"background-color:orange",
+            div(class="my_content",
+                div(class="table",
+                    div(class="table-cell",
+                        p(class="p4","SW")
+                    )))),
+        div(class="square", style=yellow,#"background-color:green",
+            div(class="my_content",
+                div(class="table",
+                    div(class="table-cell",
+                        p(class="p4","R")
+                    ))))
+    )
   })
   
   output$ibox3 <- renderUI({
