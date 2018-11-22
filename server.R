@@ -51,6 +51,7 @@ shinyServer(function(input, output, session){
   })
   
   output$key_test <- renderUI({
+    div(class="MD_right_box",
     div(class="keytopbox",
         div(class="keysquare",style="background:green",
             div(class="p6","NORMAL")
@@ -65,9 +66,11 @@ shinyServer(function(input, output, session){
             div(class="p6","EMERGENCY")
         )
     )
+  )
   })
     
   output$key_test2 <- renderUI({
+  div(class="VA_right_box",
     div(class="keytopbox2",
         div(class="keysquare2",style="background:white",
             div(class="p6","P = precip")
@@ -82,6 +85,9 @@ shinyServer(function(input, output, session){
             div(class="p6","R = reservoir")
         )
     )
+  )
+  })
+    
     
     # div(class="topbox1", 
     #     div(class="keysquare", style=orange,#"background-color:yellow"
@@ -109,7 +115,7 @@ shinyServer(function(input, output, session){
     #                     p(class="p6","R")
     #                 ))))
     # )
-  })
+  #})
   #non-output code below
   
   observeEvent(input$date, {

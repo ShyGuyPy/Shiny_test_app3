@@ -245,14 +245,32 @@ p {
 }
 
 /* css elements for warning status keys */
+.MD_right_box {
+  background:blue;
+  height:150px;
+  width:300px;
+
+}
+
+.VA_right_box {
+  background:blue;
+  height:150px;
+  width:300px;
+
+}
+
 .keytopbox {
   height:50px;
   width:55px;
+  position: relative;
+  float:right;
 }
 
 .keytopbox2 {
   height:50px;
   width:85px;
+  position: relative;
+  float:right;
 }
 
 .keysquare {
