@@ -11,29 +11,29 @@ shinyServer(function(input, output, session){
   
   output$ibox2 <- renderUI({
     div(class="topbox1", 
-        div(class="square", style=orange,#"background-color:yellow"
+        div(class="keysquare", style=orange,#"background-color:yellow"
             div(class="my_content",
                 div(class="table",
                     div(class="table-cell",
-                        p(class="p4","P")
+                        p(class="p6","P")
                     )))), 
-        div(class="square", style=red,#"background-color:red",
+        div(class="keysquare", style=red,#"background-color:red",
             div(class="my_content",
                 div(class="table",
                     div(class="table-cell",
-                        p(class="p4","GW")
+                        p(class="p6","GW")
                     )))),
-        div(class="square", style=green,#"background-color:orange",
+        div(class="keysquare", style=green,#"background-color:orange",
             div(class="my_content",
                 div(class="table",
                     div(class="table-cell",
-                        p(class="p4","SW")
+                        p(class="p6","SW")
                     )))),
-        div(class="square", style=yellow,#"background-color:green",
+        div(class="keysquare", style=yellow,#"background-color:green",
             div(class="my_content",
                 div(class="table",
                     div(class="table-cell",
-                        p(class="p4","R")
+                        p(class="p6","R")
                     ))))
     )
   })
@@ -50,7 +50,66 @@ shinyServer(function(input, output, session){
     p("test2")
   })
   
-  
+  output$key_test <- renderUI({
+    div(class="keytopbox",
+        div(class="keysquare",style="background:green",
+            div(class="p6","NORMAL")
+            ),
+        div(class="keysquare",style="background:yellow",
+            div(class="p6","WATCH")
+        ),
+        div(class="keysquare",style="background:orange",
+            div(class="p6","WARNING")
+        ),
+        div(class="keysquare",style="background:red",
+            div(class="p6","EMERGENCY")
+        )
+    )
+  })
+    
+  output$key_test2 <- renderUI({
+    div(class="keytopbox2",
+        div(class="keysquare2",style="background:white",
+            div(class="p6","P = precip")
+        ),
+        div(class="keysquare2",style="background:white",
+            div(class="p6","GW = ground water")
+        ),
+        div(class="keysquare2",style="background:white",
+            div(class="p6","SW = surface water")
+        ),
+        div(class="keysquare2",style="background:white",
+            div(class="p6","R = reservoir")
+        )
+    )
+    
+    # div(class="topbox1", 
+    #     div(class="keysquare", style=orange,#"background-color:yellow"
+    #         div(class="my_content",
+    #             div(class="table",
+    #                 div(class="table-cell",
+    #                     p(class="p6","P")
+    #                 )))), 
+    #     div(class="keysquare", style=red,#"background-color:red",
+    #         div(class="my_content",
+    #             div(class="table",
+    #                 div(class="table-cell",
+    #                     p(class="p6","GW")
+    #                 )))),
+    #     div(class="keysquare", style=green,#"background-color:orange",
+    #         div(class="my_content",
+    #             div(class="table",
+    #                 div(class="table-cell",
+    #                     p(class="p6","SW")
+    #                 )))),
+    #     div(class="keysquare", style=yellow,#"background-color:green",
+    #         div(class="my_content",
+    #             div(class="table",
+    #                 div(class="table-cell",
+    #                     p(class="p6","R")
+    #                 ))))
+    # )
+  })
   #non-output code below
   
   observeEvent(input$date, {

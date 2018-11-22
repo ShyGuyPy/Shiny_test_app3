@@ -130,6 +130,8 @@ p {
   font-weight:bold;
 }
 
+
+
 .ibox {
   display:inline-block;
   width:60%;
@@ -189,12 +191,12 @@ p {
     padding:0;
 } 
 
-.keysquare {
+.square {
     float:left;
     position: relative;
     border: 3px solid black;
     text-align:center;
-    width: 200px;/*40%;*/
+    width: 40%;
     padding-bottom : 40%; /* = width for a 1:1 aspect ratio */
     margin:1.66%;
     overflow:hidden;
@@ -223,12 +225,7 @@ p {
     height:100%;
     width:100%;
 }
-.table-cell{
-    display:table-cell;
-    vertical-align:middle;
-    height:60px;
-    width:50px;
-}
+
 
 
 .table-cell2{
@@ -246,3 +243,55 @@ p {
     width:100px;
     text-align:center;
 }
+
+/* css elements for warning status keys */
+.keytopbox {
+  height:50px;
+  width:55px;
+}
+
+.keytopbox2 {
+  height:50px;
+  width:85px;
+}
+
+.keysquare {
+    float:left;
+    position: relative;
+    border: 1px solid black;
+    text-align:center;
+    height:11px;
+    width: 50px;/*40%;*/
+    /*padding-bottom : 40%;*/ /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*background:green;*/
+}
+
+.keysquare2 {
+    float:left;
+    position: relative;
+    border: 1px solid black;
+    text-align:center;
+    height:11px;
+    width: 80px;/*40%;*/
+    /*padding-bottom : 40%;*/ /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*background:green;*/
+}
+
+.key_table-cell{
+    /*display:table-cell;*/
+    /*vertical-align:middle;*/
+
+}
+
+.p6 {
+  color:black;
+  font-size:7px;
+  font-weight:bold;
+}
+

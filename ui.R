@@ -21,7 +21,7 @@ dashboardPage(
       box(
         title=NULL,
         width=NULL,
-        height=150,
+        height=300,
         htmlOutput(outputId = "ibox2")
       ),
       box(
@@ -41,7 +41,10 @@ dashboardPage(
         width = NULL,
         htmlOutput(outputId = "boxes2")
         #"NoVa: Drought Watch; Shenandoah: Drought Emergency")
-      )
+      ),
+      htmlOutput(outputId = "key_test"),
+      htmlOutput(outputId = "key_test2")
+      
       
     ))
   )
