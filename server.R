@@ -51,7 +51,7 @@ shinyServer(function(input, output, session){
   })
   
   output$key_test <- renderUI({
-    div(class="MD_right_box",
+  div(class="MD_right_box",
     div(class="keytopbox",
         div(class="keysquare",style="background:green",
             div(class="p6","NORMAL")
