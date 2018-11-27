@@ -51,18 +51,19 @@ shinyServer(function(input, output, session){
   })
   
   output$key_test <- renderUI({
+    
   div(class="MD_right_box",
     div(class="keytopbox",
-        div(class="keysquare",style="background:green",
+        div(class="keysquare",style=green,
             div(class="p6","NORMAL")
             ),
-        div(class="keysquare",style="background:yellow",
+        div(class="keysquare",style=yellow,
             div(class="p6","WATCH")
         ),
-        div(class="keysquare",style="background:orange",
+        div(class="keysquare",style=orange,
             div(class="p6","WARNING")
         ),
-        div(class="keysquare",style="background:red",
+        div(class="keysquare",style=red,
             div(class="p6","EMERGENCY")
         )
     )
@@ -70,6 +71,7 @@ shinyServer(function(input, output, session){
   })
     
   output$key_test2 <- renderUI({
+    
   div(class="VA_right_box",
     div(class="keytopbox2",
         div(class="keysquare2",style="background:white",
